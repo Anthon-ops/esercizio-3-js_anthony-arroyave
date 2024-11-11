@@ -60,17 +60,17 @@
 // Esempio: Input= 5    Output= [5, 9, 1, 6, 10] 
 //Ricodatevi i metodi degli array ! 
 
-function input(number) {
-    let output= [number]
-    for (let i = 0; i < number; i++) {
-        let casuali=Math.floor(Math.random() * (10 - 1) + 1)
-        output.push(casuali)
-    }
-    
-    console.log(output);
-}
-input(10)
-input(5)
+// function input(number) {
+//     let output= [number]
+//     for (let i = 0; i < number; i++) {
+//         let casuali=Math.floor(Math.random() * (10 - 1) + 1)
+//         output.push(casuali)
+//     }
+
+//     console.log(output);
+// }
+// input(10)
+// input(5)
 
 
 
