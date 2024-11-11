@@ -19,21 +19,21 @@
 // se temperatura e’ minore di 30, stampare “mi dia una birra sudata”
 // se temperatura e’ minore di 0, stampare “non e’ tanto il freddo quanto l’umidità’”
 // se temperatura e’ minore di -10, stampare “uomini forti, destini forti. Uomini deboli, destini deboli.”
-function temperatura(Gradi) {
-    if(Gradi < -10 ){
-        console.log("uomini forti, destini forti. Uomini deboli, destini deboli.");
-    } else if(Gradi < 0){
-        console.log("non e’ tanto il freddo quanto l’umidità");
-    } else if(Gradi < 20){
-        console.log("non ci sono piu’ le mezze stagioni");
-    } else if(Gradi >= 30){
-        console.log("andiamo al mare!?");
-    } else{
-        console.log("non hai messo una temperatura");
-    }
-}
-temperatura(-8);
-temperatura(30)
+// function temperatura(Gradi) {
+//     if(Gradi < -10 ){
+//         console.log("uomini forti, destini forti. Uomini deboli, destini deboli.");
+//     } else if(Gradi < 0){
+//         console.log("non e’ tanto il freddo quanto l’umidità");
+//     } else if(Gradi < 20){
+//         console.log("non ci sono piu’ le mezze stagioni");
+//     } else if(Gradi >= 30){
+//         console.log("andiamo al mare!?");
+//     } else{
+//         console.log("non hai messo una temperatura");
+//     }
+// }
+// temperatura(-8);
+// temperatura(30)
 
 //Esercizio 3
 // Scrivi una funzione di uguaglianza che prenda in input due argomenti e restituisca TRUE se i due argomenti sono IDENTICI,
@@ -45,9 +45,14 @@ temperatura(30)
 //     output: FALSE
 //     Input: n = 2, m = 2
 //     Output: TRUE
-
-
-
+function IDENTICI(F , T) {
+    if (F === T) {
+        console.log("TRUE");
+    } else {
+        console.log("FALSE");
+    }
+}
+IDENTICI(2,"2")
 //Esercizio 4
 // Scrivere una funzione che prenda come input un numero e generi un array composto da n numeri casuali compresi tra 1 e 10.
 // Esempio: Input= 5    Output= [5, 9, 1, 6, 10] 
