@@ -45,20 +45,32 @@
 //     output: FALSE
 //     Input: n = 2, m = 2
 //     Output: TRUE
-function IDENTICI(F , T) {
-    if (F === T) {
-        console.log("TRUE");
-    } else {
-        console.log("FALSE");
-    }
-}
-IDENTICI(2,"2")
+// function IDENTICI(F , T) {
+//     if (F === T) {
+//         console.log("TRUE");
+//     } else {
+//         console.log("FALSE");
+//     }
+// }
+// IDENTICI(2,"2")
+
+
 //Esercizio 4
 // Scrivere una funzione che prenda come input un numero e generi un array composto da n numeri casuali compresi tra 1 e 10.
 // Esempio: Input= 5    Output= [5, 9, 1, 6, 10] 
 //Ricodatevi i metodi degli array ! 
 
-
+function input(number) {
+    let output= [number]
+    for (let i = 0; i < number; i++) {
+        let casuali=Math.floor(Math.random() * (10 - 1) + 1)
+        output.push(casuali)
+    }
+    
+    console.log(output);
+}
+input(10)
+input(5)
 
 
 
