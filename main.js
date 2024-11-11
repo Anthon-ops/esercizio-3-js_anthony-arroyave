@@ -1,17 +1,15 @@
 
 //Esercizio 1
 //  Scrivi una Funzione che dato un numero stampi la tabellina corrispondente. 
-let per=10;
-function tab(number) {
-for (let i = 0; i <= per ; i++) {
-    R= i * number
-    let risultati= `${i} per ${number} = ${R}`;
-    console.log(risultati);
-}
-}
-tab(7);
-
-
+// function tab(number) {
+// for (let i = 0; i <= 10 ; i++) {
+//     R= i * number
+//     let risultati= `${i} per ${number} = ${R}`;
+//     console.log(risultati);
+// }
+// }
+// tab(7);
+//tab(2)
 
 
 //Esercizio 2 
@@ -21,8 +19,21 @@ tab(7);
 // se temperatura e’ minore di 30, stampare “mi dia una birra sudata”
 // se temperatura e’ minore di 0, stampare “non e’ tanto il freddo quanto l’umidità’”
 // se temperatura e’ minore di -10, stampare “uomini forti, destini forti. Uomini deboli, destini deboli.”
-
-
+function temperatura(Gradi) {
+    if(Gradi < -10 ){
+        console.log("uomini forti, destini forti. Uomini deboli, destini deboli.");
+    } else if(Gradi < 0){
+        console.log("non e’ tanto il freddo quanto l’umidità");
+    } else if(Gradi < 20){
+        console.log("non ci sono piu’ le mezze stagioni");
+    } else if(Gradi >= 30){
+        console.log("andiamo al mare!?");
+    } else{
+        console.log("non hai messo una temperatura");
+    }
+}
+temperatura(-8);
+temperatura(30)
 
 //Esercizio 3
 // Scrivi una funzione di uguaglianza che prenda in input due argomenti e restituisca TRUE se i due argomenti sono IDENTICI,
