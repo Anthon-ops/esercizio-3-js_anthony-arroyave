@@ -1,7 +1,15 @@
 
 //Esercizio 1
 //  Scrivi una Funzione che dato un numero stampi la tabellina corrispondente. 
-
+let per=10;
+function tab(number) {
+for (let i = 0; i <= per ; i++) {
+    R= i * number
+    let risultati= `${i} per ${number} = ${R}`;
+    console.log(risultati);
+}
+}
+tab(7);
 
 
 
@@ -39,4 +47,4 @@
 
 
 ///Esercizio EXTRA : 
-// in autonomia create degli array e applicate i metodi visti a lezione cosi' da prendere confidenza con la loro funzionalita'.
+// in autonomia create degli array e applicate i metodi visti a lezione cosi' da prendere confidenza con la loro funzionalita'
